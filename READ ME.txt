@@ -1,0 +1,10 @@
+READ ME
+
+Firstly, initialize terraform before running every script.
+Then plan and apply bucket.tf, s3 bucket is created.
+Then plan and apply create_lambda.tf, lambda function will be created.
+Now the export.py file will reflect in the python function.
+Then plan and apply the trigger.tf file. This created a trigger in the lambda function.
+Now plan and apply the upload.tf file.
+Once the Pokemon.csv file is uploaded, it triggers the lambda function and the export.py gets executed.
+Note: before running upload.tf, make sure the path to the Pokemon.csv file is correct.
